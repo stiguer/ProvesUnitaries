@@ -21,6 +21,9 @@ public class Sale { // A class that represents the sale of medicines
     public Sale(int saleCode) {
         this.saleCode = saleCode;
         this.date = new Date();
+        this.subtotal = new BigDecimal("0");
+        this.amount = new BigDecimal("0");
+        this.isClosed = false;
     }
 
     public void addLine(ProductID prodID, BigDecimal price, PatientContr contr) throws SaleClosedException {
@@ -50,4 +53,5 @@ public class Sale { // A class that represents the sale of medicines
     public BigDecimal getAmount() { return this.amount; }
     private void setClosed() { this.isClosed = true;}
     public boolean isClosed() { return this.isClosed; }
+    public BigDecimal getSubtotal() {return this.subtotal;}
 }

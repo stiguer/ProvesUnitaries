@@ -3,9 +3,7 @@ package services; // Package for involved services
 import data.HealthCardID;
 import data.PatientContr;
 import data.ProductID;
-import exceptions.HealthCardException;
-import exceptions.NotValidePrescriptionException;
-import exceptions.ProductIDException;
+import exceptions.*;
 import pharmacy.Dispensing;
 import pharmacy.ProductSpecification;
 

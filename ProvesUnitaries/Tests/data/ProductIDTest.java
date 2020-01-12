@@ -8,13 +8,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ProductIDTest {
 
-    ProductID prodID1 = new ProductID("1234567");
-    ProductID prodID2 = new ProductID("7654321");
-    ProductID prodID3 = new ProductID("1234567");
+    ProductID prodID1 = new ProductID("prod1234");
+    ProductID prodID2 = new ProductID("prod4321");
+    ProductID prodID3 = new ProductID("prod1234");
 
     @Test
     void getProductID() {
-        assertEquals("1234567", prodID1.getProductID());
+        assertEquals("prod1234", prodID1.getProductID());
     }
 
     @Test
@@ -31,7 +31,7 @@ class ProductIDTest {
 
     @Test
     void toStringTest() {
-        String s = "ProductID{product code='1234567'}";
+        String s = "ProductID{product code='prod1234'}";
         assertEquals(s, prodID1.toString());
     }
 

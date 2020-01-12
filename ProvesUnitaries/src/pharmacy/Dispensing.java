@@ -2,9 +2,8 @@ package pharmacy;
 
 import data.ProductID;
 import exceptions.DispensingNotAvailableException;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Set;
+
+import java.util.*;
 
 /**
  * A class that represents the period for dispensing a certain set of
@@ -15,22 +14,30 @@ public class Dispensing {
 
     private byte nOrder; // n. of order for this dispensing inside the treatment
     private Date initDate, finalDate; // The period
-    private boolean isCompleted = false;
-    HashMap<ProductID, Boolean> medicines;
+    private boolean isCompleted;
+    HashMap<ProductID, Boolean> acquired; // <ProductID, acquired>
 
-    public Dispensing(byte nOrder, Date initDate, Date finalDate){
+    public Dispensing(byte nOrder, Date initDate, Date finalDate, Set<ProductID> medicines ){
         this.nOrder = nOrder;
         this.initDate = initDate;
         this.finalDate = finalDate;
+        this.isCompleted = false;
+        this.acquired = new HashMap<>();
+
+        Iterator<ProductID> it = medicines.iterator();
+        while (it.hasNext()){
+            acquired.put(it.next(), false);
+        }
     }
     public boolean dispensingEnabled() throws DispensingNotAvailableException {
         Date currentDate = new Date();
         if(currentDate.before(this.initDate)){
-            throw new DispensingNotAvailableException("data actual posterior a data inici");
+            throw new DispensingNotAvailableException("data actual anterior a data inici");
         }
         return true;
     }
-    public void setProductAsDispensed(ProductID prodID) { medicines.put(prodID,true); }
+    public void setProductAsDispensed(ProductID prodID) { acquired.put(prodID,true); }
     public void setCompleted() { this.isCompleted = true; }
-
+    public boolean isCompleted() { return this.isCompleted; }
+    public byte getnOrder() { return this.nOrder; }
 }
