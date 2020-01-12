@@ -2,17 +2,18 @@ package data;
 
 import org.junit.jupiter.api.Test;
 
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class HealthCardIDTest {
 
-    HealthCardID cardID1 = new HealthCardID("ABC1234567");
-    HealthCardID cardID2 = new HealthCardID("CDF7654321");
-    HealthCardID cardID3 = new HealthCardID("ABC1234567");
+    HealthCardID cardID1 = new HealthCardID("123456789012");
+    HealthCardID cardID2 = new HealthCardID("987654321098");
+    HealthCardID cardID3 = new HealthCardID("123456789012");
 
     @Test
     void getPersonalID() {
-        assertEquals("ABC1234567", cardID1.getPersonalID());
+        assertEquals("123456789012", cardID1.getPersonalID());
     }
 
     @Test
@@ -29,8 +30,10 @@ class HealthCardIDTest {
 
     @Test
     void toStringTest() {
-        String s = "HealthCardID{personal code='ABC1234567'}";
+        String s = "HealthCardID{personal code='123456789012'}";
         assertEquals(s, cardID1.toString());
+
+        System.out.print("first statement. ");
     }
 
     @Test

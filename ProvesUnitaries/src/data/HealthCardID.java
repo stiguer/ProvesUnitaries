@@ -9,15 +9,12 @@ public class HealthCardID {
 
     public HealthCardID(String code) {
         if (code == null){throw new RuntimeException("Error: El codi es nul");}
-        for (int i=0; i<10; i++)
+        if (code.length() != 12){ throw new RuntimeException("Error: Format incorrecte"); }
+        for (int i=0; i<12; i++)
         {
-            if (i<=2 && !Character.isLetter(code.charAt(i)))
+            if (!Character.isDigit(code.charAt(i)))
             {
-                throw new RuntimeException("Error: Codi d'identificació mal format");
-            }
-            else if (i>2 && !Character.isDigit(code.charAt(i)))
-            {
-                throw new RuntimeException("Error: Codi d'identificació mal format");
+                throw new RuntimeException("Error: Format incorrecte");
             }
         }
         this.personalID = code;

@@ -7,33 +7,33 @@ import java.math.BigDecimal;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PatientContrTest {
-    PatientContr pr1 = new PatientContr(new BigDecimal("3.0"));
-    PatientContr pr2 = new PatientContr(new BigDecimal("7.0"));
-    PatientContr pr3 = new PatientContr(new BigDecimal("3.0"));
+    PatientContr ap1 = new PatientContr(new BigDecimal("3.0"));
+    PatientContr ap2 = new PatientContr(new BigDecimal("7.0"));
+    PatientContr ap3 = new PatientContr(new BigDecimal("3.0"));
 
     @Test
-    void getPrice() { assertEquals(new BigDecimal("3.0") , pr1.getPrice()); }
+    void getAport() { assertEquals(new BigDecimal("3.0") , ap1.getAport()); }
 
     @Test
     void equals() {
-        assertFalse(pr1.equals(pr2));
-        assertTrue(pr1.equals(pr3));
+        assertFalse(ap1.equals(ap2));
+        assertTrue(ap1.equals(ap3));
     }
 
     @Test
     void hashCodeTest() {
-        assertFalse(pr1.hashCode()==pr2.hashCode());
-        assertTrue(pr1.hashCode()==pr3.hashCode());
+        assertFalse(ap1.hashCode()==ap2.hashCode());
+        assertTrue(ap1.hashCode()==ap3.hashCode());
     }
 
     @Test
     void toStringTest() {
-        String s = "PatientContr{price='3.0'}";
-        assertEquals(s, pr1.toString());
+        String s = "PatientContr{aportació='3.0'}";
+        assertEquals(s, ap1.toString());
     }
 
     @Test
     void PatientContrDNull() {
-        assertThrows(RuntimeException.class, () -> pr3 = new PatientContr(null));
+        assertThrows(RuntimeException.class, () -> ap3 = new PatientContr(null));
     }
 }
