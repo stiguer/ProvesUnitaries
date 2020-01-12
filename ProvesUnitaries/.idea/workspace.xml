@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a271ade6-829d-4586-8e16-b3150727d69b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tests/Terminal/DispensingTerminalTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/pharmacy/DispensingTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/pharmacy/ProductSpecificationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/pharmacy/SaleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/ProductNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/data/ProductIDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/data/ProductIDTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProvesUnitaries/pharmacy/Dispensing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProvesUnitaries/pharmacy/Dispensing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProvesUnitaries/pharmacy/DispensingTerminal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProvesUnitaries/pharmacy/Sale.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProvesUnitaries/pharmacy/Sale.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/ProvesUnitaries/data/ProductIDTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/ProvesUnitaries/data/ProductIDTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pharmacy/Dispensing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pharmacy/Dispensing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pharmacy/DispensingTerminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Terminal/DispensingTerminal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pharmacy/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pharmacy/Sale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/NationalHealthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/NationalHealthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Terminal/DispensingTerminalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/Terminal/DispensingTerminalTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,12 +68,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6696" />
+          <entry key="java" value="6697" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6696" />
+          <entry key="JAVA" value="6697" />
         </counts>
       </usages-collector>
     </session>
@@ -133,8 +119,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/Terminal/DispensingTerminalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+            <state relative-caret-position="2198">
+              <caret line="148" column="60" selection-start-line="148" selection-start-column="60" selection-end-line="148" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -257,8 +243,8 @@
         <option value="$PROJECT_DIR$/src/pharmacy/ProductSpecification.java" />
         <option value="$PROJECT_DIR$/src/services/NationalHealthService.java" />
         <option value="$PROJECT_DIR$/src/pharmacy/Dispensing.java" />
-        <option value="$PROJECT_DIR$/Tests/Terminal/DispensingTerminalTest.java" />
         <option value="$PROJECT_DIR$/src/Terminal/DispensingTerminal.java" />
+        <option value="$PROJECT_DIR$/Tests/Terminal/DispensingTerminalTest.java" />
       </list>
     </option>
   </component>
@@ -354,7 +340,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578855624589" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578855769078" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -388,7 +374,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DispensingTerminalTest">
+  <component name="RunManager" selected="JUnit.data in ProvesUnitaries">
     <configuration name="DispensingTerminalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProvesUnitaries" />
       <extension name="coverage">
@@ -417,34 +403,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductIDTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProvesUnitaries" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="data.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="data" />
-      <option name="MAIN_CLASS_NAME" value="data.ProductIDTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductSpecificationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProvesUnitaries" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pharmacy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pharmacy" />
-      <option name="MAIN_CLASS_NAME" value="pharmacy.ProductSpecificationTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SaleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProvesUnitaries" />
       <extension name="coverage">
@@ -459,20 +417,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="data in ProvesUnitaries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProvesUnitaries" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pharmacy in ProvesUnitaries" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProvesUnitaries" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pharmacy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pharmacy" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.ProductIDTest" />
       <item itemvalue="JUnit.SaleTest" />
-      <item itemvalue="JUnit.ProductSpecificationTest" />
       <item itemvalue="JUnit.DispensingTest" />
       <item itemvalue="JUnit.DispensingTerminalTest" />
+      <item itemvalue="JUnit.pharmacy in ProvesUnitaries" />
+      <item itemvalue="JUnit.data in ProvesUnitaries" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.data in ProvesUnitaries" />
+        <item itemvalue="JUnit.pharmacy in ProvesUnitaries" />
         <item itemvalue="JUnit.DispensingTerminalTest" />
         <item itemvalue="JUnit.DispensingTest" />
         <item itemvalue="JUnit.SaleTest" />
-        <item itemvalue="JUnit.ProductSpecificationTest" />
-        <item itemvalue="JUnit.ProductIDTest" />
       </list>
     </recent_temporary>
   </component>
@@ -840,8 +826,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/Terminal/DispensingTerminalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="43" column="38" lean-forward="true" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
+        <state relative-caret-position="2198">
+          <caret line="148" column="60" selection-start-line="148" selection-start-column="60" selection-end-line="148" selection-end-column="60" />
         </state>
       </provider>
     </entry>

@@ -19,14 +19,12 @@ import java.util.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class DispensingTerminalTest {
-    int saleCode = 123;
-    DispensingTerminal dispensingTerminal = new DispensingTerminal(saleCode);
+    DispensingTerminal dispensingTerminal = new DispensingTerminal();
 
     public static class NationalHealthServiceTestDoble implements NationalHealthService {
         HashMap<ProductID,ProductSpecification> productSpecifications = new HashMap<>();
         HashMap<HealthCardID,PatientContr> pacients = new HashMap<>();
         HashMap<HealthCardID,Dispensing> dispensacions = new HashMap<>();
-
 
         @Override
         public Dispensing getePrescription(HealthCardID hcID) throws HealthCardException, NotValidePrescriptionException, ConnectException{
@@ -149,6 +147,5 @@ class DispensingTerminalTest {
 
         assertTrue(dispensingTerminal.getDispensing().isCompleted());
         assertTrue(dispensingTerminal.getSale().isClosed());
-
     }
 }
